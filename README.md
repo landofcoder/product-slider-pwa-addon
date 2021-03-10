@@ -10,4 +10,4 @@ The addons require setup backend magento 2 extensions:
 - https://github.com/landofcoder/module-productlist-graph-ql
 
 ## Demo
-![Landofcoder Demo PWA](https://demo-pwa.landofcoder.com/)
+https://demo-pwa.landofcoder.com
