@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Swiper from 'react-id-swiper';
 import styles from './style.css';
-import stylesIndex from '../ProductDetail/index.css';
+import stylesIndex from '../ProductDetail/productDetail.css';
 import { useQuery } from '@apollo/client';
 
 import sliderQuery from './productSlider.gql';
 // import Product from "@magento/venia-ui/lib/components/Gallery";
-import GalleryItem from '@landofcoder/yume-ui/src/components/Gallery/item';
+import GalleryItem from "@magento/venia-ui/lib/components/Gallery/item";
 
 const mapGalleryItem = item => {
     const { small_image } = item;
@@ -18,18 +18,14 @@ const mapGalleryItem = item => {
 };
 
 const UpSellProductSlider = (urlKey) => {
-    console.log("urlKey", urlKey.urlKey.props);
     const { queries } = sliderQuery;
     const { getUpSellProductQuery } = queries;
     const { data, error, loading } = useQuery(getUpSellProductQuery,
         {
             variables: {
-                url_key: urlKey.urlKey.props
+                url_key: urlKey.urlKey
             },
         });
-    console.log("data upsell", data);
-    console.log("error", error);
-    console.log("loading", loading);
     const params = {
         slidesPerView: 5,
         spaceBetween: 30,

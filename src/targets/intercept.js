@@ -27,8 +27,8 @@ module.exports = targets => {
 //packages/extensions/yume-ui/lib/talons/Homepage/useProductSlider.js
 const moduleOverridePlugin = require('./moduleOverrideWebpackPlugin');
 const componentOverrideMapping = {
-    '@landofcoder/yume-ui/lib/talons/Homepage/useProductSlider.js': './wrapperProductSlider.js',
-    '@landofcoder/yume-ui/lib/talons/ProductDetail/useProductRelated.js': './wrapperRelatedProduct.js',
+    [`@magento/venia-ui/lib/components/HomePage/index.js`]: '@landofcoder/lof-products-slider-module/src/components/HomePage/index.js',
+    [`@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js`]: '@landofcoder/lof-products-slider-module/src/components/ProductDetail/index.js',
 };
 
 module.exports = targets => {

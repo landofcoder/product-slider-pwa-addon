@@ -5,7 +5,7 @@ import { useQuery } from '@apollo/client';
 
 import sliderQuery from './productSlider.gql';
 // import Product from "@magento/venia-ui/lib/components/Gallery";
-import GalleryItem from '@landofcoder/yume-ui/src/components/Gallery/item';
+import GalleryItem from "@magento/venia-ui/lib/components/Gallery/item";
 
 const mapGalleryItem = item => {
     const { small_image } = item;

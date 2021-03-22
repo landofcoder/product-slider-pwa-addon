@@ -4,19 +4,16 @@ import FeaturedProductSlider from "../ProductSlider/FeaturedProductSlider";
 import DealsProductSlider from "../ProductSlider/DealsProductSlider";
 import BestSellerProductSlider from "../ProductSlider/BestSellerProductSlider";
 import styles from './index.css';
-const App = () => {
+const HomePage = () => {
     return (
         <div className={styles.productSliderModule}>
             <div className={styles.wrapperSlider}>
                 <TopProductSlider />
-
                 <FeaturedProductSlider />
-
                 <BestSellerProductSlider />
-
                 <DealsProductSlider />
             </div>
         </div>
     );
 };
-export default App;
+export default HomePage;
