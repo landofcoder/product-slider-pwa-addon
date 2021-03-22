@@ -61,7 +61,6 @@ const CrossSellProductSlider = (urlKey) => {
             return null;
         }
     });
-    console.log("galleryItems", galleryItems);
     if (galleryItems[0] !== null) {
         return (
             <div>

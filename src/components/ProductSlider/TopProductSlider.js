@@ -19,7 +19,6 @@ const TopProductSlider = () => {
     const { queries } = sliderQuery;
     const { getTopProductQuery } = queries;
     const { loading, error, data } = useQuery(getTopProductQuery);
-    console.log("ABC",data);
     const params = {
         slidesPerView: 5,
         spaceBetween: 30,

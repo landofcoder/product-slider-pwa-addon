@@ -1,8 +1,8 @@
 {
-    "name": "@landofcoder/lof-products-slider-module",
+    "name": "@landofcoder/product-slider-module",
     "version": "1.0.0",
     "description": "",
-    "main": "src/targets/wrapperProductSlider.js",
+    "main": "src/targets/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },

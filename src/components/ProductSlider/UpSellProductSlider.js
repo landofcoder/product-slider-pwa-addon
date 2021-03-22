@@ -61,7 +61,6 @@ const UpSellProductSlider = (urlKey) => {
             return null;
         }
     });
-    console.log("galleryItems", galleryItems.length);
     if (galleryItems[0] !== null) {
         return (
             <div>

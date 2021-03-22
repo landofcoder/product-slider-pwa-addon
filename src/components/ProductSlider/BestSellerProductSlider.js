@@ -20,8 +20,6 @@ const BestSellerProductSlider = () => {
     const { queries } = sliderQuery;
     const { getBestSellerProductQuery } = queries;
     const { data, error, loading } = useQuery(getBestSellerProductQuery);
-    console.log("data best", data);
-    console.log("error", error);
     const params = {
         slidesPerView: 5,
         spaceBetween: 30,

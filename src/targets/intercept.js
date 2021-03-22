@@ -9,7 +9,7 @@ module.exports = targets => {
     // Set the buildpack features required by this extension
     const builtins = targets.of('@magento/pwa-buildpack');
     builtins.specialFeatures.tap(featuresByModule => {
-        featuresByModule['@landofcoder/lof-products-slider-module'] = {
+        featuresByModule['@landofcoder/product-slider-module'] = {
             cssModules: true,
             esModules: true
         };
@@ -24,11 +24,10 @@ module.exports = targets => {
 */
 
 //------------------------------------
-//packages/extensions/yume-ui/lib/talons/Homepage/useProductSlider.js
 const moduleOverridePlugin = require('./moduleOverrideWebpackPlugin');
 const componentOverrideMapping = {
-    [`@magento/venia-ui/lib/components/HomePage/index.js`]: '@landofcoder/lof-products-slider-module/src/components/HomePage/index.js',
-    [`@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js`]: '@landofcoder/lof-products-slider-module/src/components/ProductDetail/index.js',
+    [`@magento/venia-ui/lib/components/HomePage/index.js`]: '@landofcoder/product-slider-module/src/components/HomePage/index.js',
+    [`@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js`]: '@landofcoder/product-slider-module/src/components/ProductDetail/index.js',
 };
 
 module.exports = targets => {

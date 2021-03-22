@@ -20,7 +20,6 @@ const FeaturedProductSlider = () => {
     const { queries } = sliderQuery;
     const { getFeaturedProductQuery } = queries;
     const { data, error, loading } = useQuery(getFeaturedProductQuery);
-    console.log(data);
     const params = {
         slidesPerView: 5,
         spaceBetween: 30,

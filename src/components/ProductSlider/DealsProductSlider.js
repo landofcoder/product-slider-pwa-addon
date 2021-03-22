@@ -20,7 +20,6 @@ const DealsProductSlider = () => {
     const { queries } = sliderQuery;
     const { getDealProductQuery } = queries;
     const { data, error, loading } = useQuery(getDealProductQuery);
-    console.log(data);
     const params = {
         slidesPerView: 5,
         spaceBetween: 30,
