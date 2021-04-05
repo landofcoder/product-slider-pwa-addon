@@ -26,8 +26,8 @@ module.exports = targets => {
 //------------------------------------
 const moduleOverridePlugin = require('./moduleOverrideWebpackPlugin');
 const componentOverrideMapping = {
-    '@landofcoder/lof-pwa-theme/lib/talons/Homepage/useProductSlider.js': './wrapperProductSlider.js',
-    '@landofcoder/lof-pwa-theme/lib/talons/ProductDetail/useProductRelated.js': './wrapperRelatedProduct.js',
+    '@landofcoder/lof-product-extend-components/lib/talons/Homepage/useProductSlider.js': './wrapperProductSlider.js',
+    '@landofcoder/lof-product-extend-components/lib/talons/ProductDetail/useProductRelated.js': './wrapperRelatedProduct.js',
 };
 
 module.exports = targets => {
