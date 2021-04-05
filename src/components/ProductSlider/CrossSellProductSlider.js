@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Swiper from 'react-id-swiper';
 import styles from './style.css';
-import stylesIndex from '../ProductDetail/productDetail.css';
+import stylesIndex from '../../../../lof-pwa-theme/src/components/ProductDetail/productDetail.css';
 import { useQuery } from '@apollo/client';
 
 import sliderQuery from './productSlider.gql';
@@ -23,7 +23,7 @@ const CrossSellProductSlider = (urlKey) => {
     const { data, error, loading } = useQuery(getCrossSellProductQuery,
         {
             variables: {
-                url_key: urlKey.urlKey
+                url_key: urlKey.urlKey.props
             },
         });
     const params = {

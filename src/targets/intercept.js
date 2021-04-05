@@ -26,8 +26,8 @@ module.exports = targets => {
 //------------------------------------
 const moduleOverridePlugin = require('./moduleOverrideWebpackPlugin');
 const componentOverrideMapping = {
-    [`@magento/venia-ui/lib/components/HomePage/index.js`]: '@landofcoder/product-slider-module/src/components/HomePage/index.js',
-    [`@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js`]: '@landofcoder/product-slider-module/src/components/ProductDetail/index.js',
+    '@landofcoder/lof-pwa-theme/lib/talons/Homepage/useProductSlider.js': './wrapperProductSlider.js',
+    '@landofcoder/lof-pwa-theme/lib/talons/ProductDetail/useProductRelated.js': './wrapperRelatedProduct.js',
 };
 
 module.exports = targets => {
