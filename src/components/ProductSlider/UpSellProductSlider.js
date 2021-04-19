@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Swiper from 'react-id-swiper';
 import styles from './style.css';
-import stylesIndex from '../../../../lof-product-extend-components/src/components/ProductDetail/productDetail.css';
+import stylesIndex from '@landofcoder/lof-product-extend-components/src/components/ProductDetail/productDetail.css';
 import { useQuery } from '@apollo/client';
 
 import sliderQuery from './productSlider.gql';
