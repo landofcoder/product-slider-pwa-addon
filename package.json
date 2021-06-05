@@ -9,8 +9,8 @@
     "author": "landofcoder",
     "license": "ISC",
     "peerDependencies": {
-        "@magento/pwa-buildpack": "^7.0.0",
-        "@magento/venia-ui": "^5.0.0",
+        "@magento/pwa-buildpack": "^9.0.0",
+        "@magento/venia-ui": "^7.0.0",
         "react": "^16.14.0"
     },
     "engines": {
